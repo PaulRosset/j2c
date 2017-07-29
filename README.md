@@ -1,16 +1,16 @@
-# jsonTocsv
+# jsonTocsv (j2c)
 CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.
 
 # Installation
 
 ```
-npm install jsontocsv -g
+npm install j2c -g
 ```
 
 # Usage 
 
 ```
-jsontocsv --json [file.json] --csv [file.csv]
+j2c --json [file.json] --csv [file.csv]
 ```
 
 ```
