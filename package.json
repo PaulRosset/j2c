@@ -1,0 +1,34 @@
+{
+  "name": "jsontocsv",
+  "version": "1.0.0",
+  "description": "CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.",
+  "main": "index.js",
+  "bin": {
+    "jsontocsv": "./index.js"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulRosset/jsonTocsv.git"
+  },
+  "keywords": [
+    "node",
+    "json",
+    "csv",
+    "js",
+    "cli"
+  ],
+  "author": "Paul Rosset <paulrosset96@gmail.com> (http://paulrosset.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulRosset/jsonTocsv/issues"
+  },
+  "homepage": "https://github.com/PaulRosset/jsonTocsv#readme",
+  "dependencies": {
+    "chalk": "2.0.1",
+    "commander": "2.11.0",
+    "lodash": "4.17.4"
+  }
+}
