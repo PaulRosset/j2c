@@ -4,7 +4,7 @@ CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys
 # Installation
 
 ```
-npm install j2c -g
+npm install json2csv-cli -g
 ```
 
 # Usage 
