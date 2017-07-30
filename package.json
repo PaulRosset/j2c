@@ -1,8 +1,8 @@
 {
   "name": "json2csv-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.",
-  "main": "index.js",
+  "main": "./Api/main.js",
   "bin": {
     "j2c": "./index.js"
   },
