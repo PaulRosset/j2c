@@ -30,7 +30,7 @@ if (argc.rawArgs.length <= 2 || argc.rawArgs.length > 8) {
         console.time(chalk.green('Written in'))
         const jsonData = JSON.parse(data)
         conv.convert(jsonData, first)
-        fs.writeFile(csv, _.join(['Key,Value\n', ...conv.tab], ''), (err) => {
+        fs.writeFile(csv, conv.onceFilled(), (err) => {
             if (err) {
                 console.log(chalk.red('Error when writing file.'))
                 return false
