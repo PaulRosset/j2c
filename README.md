@@ -1,5 +1,7 @@
 # jsonTocsv (j2c)
 
+[![Travis CI Build Status](https://travis-ci.org/PaulRosset/j2c.svg?branch=master)](https://travis-ci.org/PaulRosset/j2c)
+
 CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.
 
 A web app also available -->
