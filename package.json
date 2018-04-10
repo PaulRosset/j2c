@@ -1,26 +1,25 @@
 {
   "name": "json2csv-cli",
-  "version": "1.2.1",
-  "description": "CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.",
-  "main": "./src/main.js",
+  "version": "1.3.2",
+  "description":
+    "CLI that transform a JSON to CSV with Key,Value format. Usefull to list all keys from a json object.",
+  "main": "./lib/main.js",
   "bin": {
     "j2c": "./index.js"
   },
   "scripts": {
-    "test": "npm test"
+    "build":
+      "BABEL_ENV=production ./node_modules/.bin/babel ./src/ --out-dir lib/",
+    "dev":
+      "BABEL_ENV=development ./node_modules/.bin/babel --watch ./src/ --out-dir lib/",
+    "test": "./node_modules/.bin/eslint src/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PaulRosset/jsonTocsv.git"
   },
-  "keywords": [
-    "node",
-    "json",
-    "csv",
-    "js",
-    "cli"
-  ],
-  "author": "Paul Rosset <paulrosset96@gmail.com> (http://paulrosset.com/)",
+  "keywords": ["node", "json", "csv", "js", "cli"],
+  "author": "Paul Rosset <paulrosset96@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PaulRosset/jsonTocsv/issues"
@@ -32,8 +31,12 @@
     "lodash": "4.17.4"
   },
   "devDependencies": {
-    "babel-cli": "6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-preset-es2015": "6.24.1",
-    "babel-preset-stage-0": "6.24.1"
+    "babel-preset-stage-0": "6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1"
   }
 }
